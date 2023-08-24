@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/movie_list_react_app/static/css/main.c3b940c6.css",
+    "main.js": "/movie_list_react_app/static/js/main.5c4f5fc3.js",
+    "static/media/moAmerLogo.png": "/movie_list_react_app/static/media/moAmerLogo.7ce41abad16318cc9c27.png",
+    "index.html": "/movie_list_react_app/index.html",
+    "main.c3b940c6.css.map": "/movie_list_react_app/static/css/main.c3b940c6.css.map",
+    "main.5c4f5fc3.js.map": "/movie_list_react_app/static/js/main.5c4f5fc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3b940c6.css",
+    "static/js/main.5c4f5fc3.js"
+  ]
+}
