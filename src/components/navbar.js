@@ -72,16 +72,19 @@ import { useState } from "react";
 // };
 
 export const AmerNavbar = ({ search }) => {
-  const [searchVar, changeSearchVarState] = useState("");
-
   const handleSearch = (e) => {
+    // This is used to prevent the browser From not refreshing the page uaAmer
+    // Try to use This one you will find a lot of problems uaAmer
+    search(e);
+  };
+
+  const handleSearchBtn = (e) => {
     // This is used to prevent the browser From not refreshing the page uaAmer
     e.preventDefault();
     // Try to use This one you will find a lot of problems uaAmer
-    search(searchVar);
+    search(e.target.value);
+    console.log(e.target.value);
   };
-
-  console.log(searchVar);
 
   return (
     <div dir="rtl" style={{ backgroundColor: "black", padding: "10px" }}>
@@ -110,16 +113,9 @@ export const AmerNavbar = ({ search }) => {
               aria-label="Search"
               flex="1"
               onChange={(e) => {
-                changeSearchVarState(e.target.value);
+                handleSearch(e.target.value);
               }}
-              value={searchVar}
             />
-            <button
-              className="btn-search-style"
-              onClick={(e) => handleSearch(e)}
-            >
-              بحث
-            </button>
           </form>
         </nav>
       </Container>
