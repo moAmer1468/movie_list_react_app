@@ -32,16 +32,18 @@ function Footer() {
               padding: "0px",
             }}
           >
-            <img
-              style={{
-                width: "80px",
-                height: "50px",
-                margin: "2px",
-                boxSizing: "border-box",
-              }}
-              src={moAmerLogo}
-              alt="ImageNot Found"
-            />
+            <a href="/">
+              <img
+                style={{
+                  width: "80px",
+                  height: "50px",
+                  margin: "2px",
+                  boxSizing: "border-box",
+                }}
+                src={moAmerLogo}
+                alt="ImageNot Found"
+              />
+            </a>
             <div> Mohamed Alaa amer &copy; 2023 </div>
           </Col>
         </Row>

@@ -79,28 +79,39 @@ export const App = () => {
 
   return (
     <div className="font">
-      <AmerNavbar search={search}></AmerNavbar>
-      <Container>
-        <BrowserRouter>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <MovieList
-                  movies={movies}
-                  pageCount={pageCount}
-                  getPage={getPage}
+      <div
+        className="main-container"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+        }}
+      >
+        <div style={{ flex: "1", padding: "" }}>
+          <AmerNavbar search={search}></AmerNavbar>
+          <Container>
+            <BrowserRouter>
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <MovieList
+                      movies={movies}
+                      pageCount={pageCount}
+                      getPage={getPage}
+                    />
+                  }
                 />
-              }
-            />
-            <Route />
-            <Route path="/movie/:id" element={<MoviesDetails />} />
+                <Route />
+                <Route path="/movie/:id" element={<MoviesDetails />} />
 
-            {/* <CardMovie></CardMovie> */}
-          </Routes>
-        </BrowserRouter>
-      </Container>
-      <Footer></Footer>
+                {/* <CardMovie></CardMovie> */}
+              </Routes>
+            </BrowserRouter>
+          </Container>
+        </div>
+        <Footer></Footer>
+      </div>
     </div>
   );
 };
