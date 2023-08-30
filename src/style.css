@@ -160,3 +160,35 @@ color: white;
 .no-films-found{
     height: 80vh
 }
+.nav-style {
+    height: 90px;
+    width: 1440px;
+    background-color: #393839;
+}
+
+.logo {
+    height: 72px;
+    width: 78px;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    height: 40px;
+    text-indent: 25px;
+    border-radius: 20px;
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid red;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+}
+
